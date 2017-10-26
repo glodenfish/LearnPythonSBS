@@ -10,6 +10,18 @@ python中的字符串分为五种：
   字符 'python'
   字符串"python"
   多行字符串 """python"""
-  unicode字符 u'中国'   u'\u4e2d\u56fd'
+  unicode字符 u'中国'   u'\u4e2d\u56fd'  -- python的.py文件默认使用utf-8 unicode编码
   原生字符 r'中国'      '\xd6\xd0\xb9\xfa'
+
+  有一种情况比如使用正则表达式的时候：
+  re.compile("^((?:[(]\\d+[)])?\\s*\\d+(?:-\\d+)?)$")
+  需要\作为转义字符，如果使用r''就可以减少\的书写。
+  re.compile(r"^((?:[(]\d+[)])?\s*\d+(?:-\d+)?)$")
+
+  多行字符可以这么写：
+  s = "this is a good python programme" + \
+      "yes; i got it"
+  s = ("this is a good python programme"
+       "yes; i got it")
+  python建议使用第二种写法便于编译
 
