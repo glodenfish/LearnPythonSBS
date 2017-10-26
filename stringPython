@@ -25,3 +25,23 @@ python中的字符串分为五种：
        "yes; i got it")
   python建议使用第二种写法便于编译
 
+字符串编码的转换
+ >>> ord('\r')
+ 13
+ >>> ord('r')
+ 114
+ >>> hex(ord('r'))
+ '0x72'
+ >>> chr(0x72)
+ 'r'
+ >>> ascii('0x72')
+
+ 字符串在python中是一个字符串序列。
+ s可以使用s[0] 下标来访问。
+ 对于序列可以使用分片技术来对序列进行切片。语法如下：
+ s[start]    序列开始的下标
+ s[start:end]  序列开始结束，结束为end-1  start从0开始
+ s[start:end:step] step可以负数表示反向步进。
+
+
+
