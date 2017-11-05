@@ -43,5 +43,13 @@ python中的字符串分为五种：
  s[start:end]  序列开始结束，结束为end-1  start从0开始
  s[start:end:step] step可以负数表示反向步进。
 
+ 例子：
+ s[0]------s[8]
+ Light ray 
+ s[-9]------s[-1] 
+
+ s[-1:2:-2]  取-1开始 到 s[2]结束 反向步进为2的切片
+ 'yrt'
+
 
 
